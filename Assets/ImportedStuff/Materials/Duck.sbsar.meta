@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: bf7025e8590c48645992b509bb2b7668
-timeCreated: 1432332750
+timeCreated: 1432364675
 licenseType: Pro
 SubstanceImporter:
   serializedVersion: 5
@@ -8,8 +8,8 @@ SubstanceImporter:
   - serializedVersion: 15
     name: Duck
     prototypeName: Duck
-    shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-    shaderKeywords: _METALLICGLOSSMAP _NORMALMAP
+    shader: {fileID: 4, guid: 0000000000000000f000000000000000, type: 0}
+    shaderKeywords: 
     renderQueue: -1
     inputs:
     - name: $randomseed
@@ -71,60 +71,15 @@ SubstanceImporter:
             texture: {instanceID: 0}
             scale: {x: 1, y: 1}
             offset: {x: 0, y: 0}
-        data:
-          first:
-            name: _DetailNormalMap
-          second:
-            texture: {instanceID: 0}
-            scale: {x: 1, y: 1}
-            offset: {x: 0, y: 0}
-        data:
-          first:
-            name: _ParallaxMap
-          second:
-            texture: {instanceID: 0}
-            scale: {x: 1, y: 1}
-            offset: {x: 0, y: 0}
-        data:
-          first:
-            name: _OcclusionMap
-          second:
-            texture: {instanceID: 0}
-            scale: {x: 1, y: 1}
-            offset: {x: 0, y: 0}
-        data:
-          first:
-            name: _EmissionMap
-          second:
-            texture: {instanceID: 0}
-            scale: {x: 1, y: 1}
-            offset: {x: 0, y: 0}
-        data:
-          first:
-            name: _DetailMask
-          second:
-            texture: {instanceID: 0}
-            scale: {x: 1, y: 1}
-            offset: {x: 0, y: 0}
-        data:
-          first:
-            name: _DetailAlbedoMap
-          second:
-            texture: {instanceID: 0}
-            scale: {x: 1, y: 1}
-            offset: {x: 0, y: 0}
-        data:
-          first:
-            name: _MetallicGlossMap
-          second:
-            texture: {instanceID: 0}
-            scale: {x: 1, y: 1}
-            offset: {x: 0, y: 0}
       floats:
         data:
           first:
             name: _Cutoff
           second: .5
+        data:
+          first:
+            name: _Shininess
+          second: .078125
         data:
           first:
             name: _SrcBlend
@@ -184,6 +139,10 @@ SubstanceImporter:
           second: {r: 1, g: 1, b: 1, a: 1}
         data:
           first:
+            name: _SpecColor
+          second: {r: .5, g: .5, b: .5, a: 1}
+        data:
+          first:
             name: _EmissionColorUI
           second: {r: 1, g: 1, b: 1, a: 1}
     textureParameters:
@@ -211,10 +170,6 @@ SubstanceImporter:
         name: _BumpMap
       material: {instanceID: 0}
       baseUID: 839808136
-    - shaderProp:
-        name: _MetallicGlossMap
-      material: {instanceID: 0}
-      baseUID: 839808140
     buildTargetSettings:
     - serializedVersion: 2
       buildTarget: 

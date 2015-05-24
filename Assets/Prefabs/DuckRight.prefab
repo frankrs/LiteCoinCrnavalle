@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 472838}
   - 33: {fileID: 3366212}
   - 23: {fileID: 2328836}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ducklo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25,7 +25,10 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 485384}
-  m_Layer: 0
+  - 64: {fileID: 6473058}
+  - 95: {fileID: 9533554}
+  - 114: {fileID: 11413528}
+  m_Layer: 8
   m_Name: DuckRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42,7 +45,7 @@ GameObject:
   - 4: {fileID: 436628}
   - 33: {fileID: 3309052}
   - 23: {fileID: 2386470}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: target
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -80,8 +83,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 123996}
   m_LocalRotation: {x: 0, y: .707106829, z: 0, w: .707106709}
-  m_LocalPosition: {x: -.811999977, y: 2.0079999, z: 3.81599998}
-  m_LocalScale: {x: 1.66122568, y: 1.66122556, z: 1.66122556}
+  m_LocalPosition: {x: -1.40100002, y: 2.0079999, z: 3.829}
+  m_LocalScale: {x: 2.46363711, y: 2.46363664, z: 2.46363664}
   m_Children:
   - {fileID: 436628}
   - {fileID: 472838}
@@ -149,6 +152,51 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 111128}
   m_Mesh: {fileID: 4300000, guid: 9dcf981b3c5c8524e9ae31bd33518d7c, type: 3}
+--- !u!64 &6473058
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 123996}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_Mesh: {fileID: 4300000, guid: 9dcf981b3c5c8524e9ae31bd33518d7c, type: 3}
+--- !u!95 &9533554
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 123996}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: eb46499544302d240979a2cf02c6580b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11413528
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 123996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d0b926c587c5664896d124f2850fc4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target:
+    shot: 0
+    points: 2
+  speed: 1
+  life: 7
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
