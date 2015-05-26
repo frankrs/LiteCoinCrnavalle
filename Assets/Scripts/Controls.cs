@@ -22,16 +22,25 @@ public class Controls : MonoBehaviour {
 	public delegate void ShotBullet();
 	public static event ShotBullet OnShotBullet;
 
+	public delegate void BulletHit(string tag);
+	public static event BulletHit OnBulletHit;
+
 
 	void Awake(){
 		screenSizeHalf = new Vector2 (Screen.width,Screen.height);
 	}
 
 	void LateUpdate (){
+
+
+		if(joyStick.isActiveAndEnabled){
 		jsPos = joyStick.JoystickPosition;
 		//jsPos = Input.acceleration;
 		realScreenPos = new Vector2 (jsPos.x * screenSizeHalf.x, jsPos.y * screenSizeHalf.y);
 		sight.anchoredPosition = Vector2.SmoothDamp(sight.anchoredPosition,realScreenPos/2,ref sightVel,sightSmooth);
+		}
+
+
 
 		if(Input.GetKeyDown("escape")){
 			ExitGame();
@@ -39,12 +48,15 @@ public class Controls : MonoBehaviour {
 	}
 
 	public void Shoot (){
+		if(ScoreKeeper.bullets < 1 || ScoreKeeper.gameState == GameState.gameOver){
+			return;
+		}
 		OnShotBullet();
 		Ray ray = Camera.main.ScreenPointToRay(sight.position);
 		RaycastHit hit;
 		if (Physics.Raycast(ray, out hit)){
 			hit.transform.SendMessage("Shot",SendMessageOptions.DontRequireReceiver);
-			print(hit.transform);
+			OnBulletHit(hit.transform.tag);
 		}
 		else
 			print("I'm looking at nothing!");
@@ -55,5 +67,14 @@ public class Controls : MonoBehaviour {
 	public void ExitGame(){
 		Application.Quit();
 	}
+
+
+
+	public void PlayButton(){
+		ScoreKeeper.transitionState = TransitionState.moving;
+		Camera.main.gameObject.SendMessage("MoveUp");
+	}
+
+
 
 }

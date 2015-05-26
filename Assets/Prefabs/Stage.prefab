@@ -10,10 +10,10 @@ GameObject:
   - 4: {fileID: 444192}
   m_Layer: 0
   m_Name: Stage
-  m_TagString: Untagged
+  m_TagString: wood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &107804
 GameObject:
@@ -30,7 +30,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &109298
 GameObject:
@@ -42,12 +42,13 @@ GameObject:
   - 4: {fileID: 491514}
   - 33: {fileID: 3326932}
   - 23: {fileID: 2329326}
+  - 64: {fileID: 6491126}
   m_Layer: 0
   m_Name: back
-  m_TagString: Untagged
+  m_TagString: wood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &111486
 GameObject:
@@ -59,12 +60,13 @@ GameObject:
   - 4: {fileID: 401120}
   - 33: {fileID: 3364228}
   - 23: {fileID: 2308740}
+  - 64: {fileID: 6457044}
   m_Layer: 0
   m_Name: waves low 2
-  m_TagString: Untagged
+  m_TagString: wood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &112330
 GameObject:
@@ -76,12 +78,13 @@ GameObject:
   - 4: {fileID: 461444}
   - 33: {fileID: 3381710}
   - 23: {fileID: 2310962}
+  - 64: {fileID: 6453960}
   m_Layer: 0
   m_Name: waves low 1
-  m_TagString: Untagged
+  m_TagString: wood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &114284
 GameObject:
@@ -93,12 +96,13 @@ GameObject:
   - 4: {fileID: 426846}
   - 33: {fileID: 3381994}
   - 23: {fileID: 2307768}
+  - 64: {fileID: 6494084}
   m_Layer: 0
   m_Name: back 2
-  m_TagString: Untagged
+  m_TagString: wood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &128420
 GameObject:
@@ -110,12 +114,13 @@ GameObject:
   - 4: {fileID: 496214}
   - 33: {fileID: 3357650}
   - 23: {fileID: 2395474}
+  - 64: {fileID: 6486662}
   m_Layer: 0
   m_Name: back 1
-  m_TagString: Untagged
+  m_TagString: wood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &140276
 GameObject:
@@ -130,7 +135,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &147650
 GameObject:
@@ -145,7 +150,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &156900
 GameObject:
@@ -162,7 +167,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &167368
 GameObject:
@@ -174,12 +179,13 @@ GameObject:
   - 4: {fileID: 407916}
   - 33: {fileID: 3395774}
   - 23: {fileID: 2356412}
+  - 64: {fileID: 6494478}
   m_Layer: 0
   m_Name: waves low
-  m_TagString: Untagged
+  m_TagString: wood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &174290
 GameObject:
@@ -196,7 +202,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &178952
 GameObject:
@@ -213,7 +219,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &189382
 GameObject:
@@ -225,12 +231,13 @@ GameObject:
   - 4: {fileID: 413104}
   - 33: {fileID: 3397082}
   - 23: {fileID: 2328322}
+  - 64: {fileID: 6426142}
   m_Layer: 0
   m_Name: waves low 3
-  m_TagString: Untagged
+  m_TagString: wood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &198852
 GameObject:
@@ -242,12 +249,13 @@ GameObject:
   - 4: {fileID: 478502}
   - 33: {fileID: 3344454}
   - 23: {fileID: 2386170}
+  - 65: {fileID: 6544732}
   m_Layer: 0
   m_Name: roof
-  m_TagString: Untagged
+  m_TagString: wood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &401120
 Transform:
@@ -316,7 +324,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 114284}
   m_LocalRotation: {x: -.705517173, y: .0473870188, z: .0473869592, w: .705517232}
-  m_LocalPosition: {x: -3.69000006, y: 1.63999999, z: 2.88000011}
+  m_LocalPosition: {x: -3.69000006, y: 1.63999999, z: 2.61999989}
   m_LocalScale: {x: .750982225, y: .641571045, z: .641571164}
   m_Children: []
   m_Father: {fileID: 444192}
@@ -438,7 +446,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 128420}
   m_LocalRotation: {x: -.0531943999, y: -.70510304, z: -.705103159, w: .0531943738}
-  m_LocalPosition: {x: -4.46000004, y: 1.63999999, z: -2.73000002}
+  m_LocalPosition: {x: -4.46000004, y: 1.63999999, z: -2.50999999}
   m_LocalScale: {x: .750982285, y: .641571164, z: .641571164}
   m_Children: []
   m_Father: {fileID: 444192}
@@ -815,6 +823,102 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 189382}
   m_Mesh: {fileID: 4300000, guid: 1aeba3c96df1cc14e9b04e88faa54bea, type: 3}
+--- !u!64 &6426142
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 189382}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: 1aeba3c96df1cc14e9b04e88faa54bea, type: 3}
+--- !u!64 &6453960
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 112330}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: 1aeba3c96df1cc14e9b04e88faa54bea, type: 3}
+--- !u!64 &6457044
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 111486}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: 1aeba3c96df1cc14e9b04e88faa54bea, type: 3}
+--- !u!64 &6486662
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 128420}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!64 &6491126
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 109298}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!64 &6494084
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 114284}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!64 &6494478
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 167368}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: 1aeba3c96df1cc14e9b04e88faa54bea, type: 3}
+--- !u!65 &6544732
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 198852}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: .999999821, y: 1, z: 1}
+  m_Center: {x: 5.58793545e-09, y: 0, z: -2.38418579e-07}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
