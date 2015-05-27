@@ -83,7 +83,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 123996}
   m_LocalRotation: {x: 0, y: .707106829, z: 0, w: .707106709}
-  m_LocalPosition: {x: -1.40100002, y: 2.0079999, z: 3.829}
+  m_LocalPosition: {x: .529999971, y: .0799999982, z: 2.46000004}
   m_LocalScale: {x: 2.46363711, y: 2.46363664, z: 2.46363664}
   m_Children:
   - {fileID: 436628}
@@ -195,8 +195,55 @@ MonoBehaviour:
   target:
     shot: 0
     points: 2
-  speed: 1
+  speed: .75
   life: 7
+  color:
+    key0:
+      serializedVersion: 2
+      rgba: 4281859840
+    key1:
+      serializedVersion: 2
+      rgba: 4278255590
+    key2:
+      serializedVersion: 2
+      rgba: 4293067007
+    key3:
+      serializedVersion: 2
+      rgba: 0
+    key4:
+      serializedVersion: 2
+      rgba: 0
+    key5:
+      serializedVersion: 2
+      rgba: 0
+    key6:
+      serializedVersion: 2
+      rgba: 0
+    key7:
+      serializedVersion: 2
+      rgba: 0
+    ctime0: 0
+    ctime1: 32768
+    ctime2: 65535
+    ctime3: 0
+    ctime4: 0
+    ctime5: 0
+    ctime6: 0
+    ctime7: 0
+    atime0: 0
+    atime1: 32768
+    atime2: 65535
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_NumColorKeys: 3
+    m_NumAlphaKeys: 3
+  colorChangeSpeed: .5
+  duckRend: {fileID: 2328836}
+  cycleTime: 10
+  dial: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

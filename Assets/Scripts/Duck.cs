@@ -9,18 +9,35 @@ public class Duck : MonoBehaviour {
 
 	public float life;
 
+	public Gradient color;
+
+	public float colorChangeSpeed;
+
+	public Renderer duckRend;
+
+	private ProceduralMaterial sub;
+
 	private Animator anim;
 
+	public float cycleTime = 10;
+
+	private float dialoffset;
+
+	public float dial;
 
 	public delegate void Score(int points);
 	public static event Score OnScore;
 
+	
+
 	void Awake () {
 		anim = GetComponent<Animator>();
+		sub = duckRend.material as ProceduralMaterial;
 	}
 
 	void Start () {
 		Invoke("End",life);
+		dialoffset = Random.Range(0f,2f);
 	}
 
 	void End(){
@@ -35,11 +52,29 @@ public class Duck : MonoBehaviour {
 		target.shot = true;
 	}
 
-	//public void Score():
-
 
 	void Update(){
+		// move the duck forward
 		transform.Translate(transform.forward * speed * Time.deltaTime,Space.World);
+	}
+
+
+
+	void LateUpdate(){
+
+		// ocsillate color value
+		dial = Mathf.PingPong((Time.time + dialoffset) * colorChangeSpeed, 1f);
+
+			if(sub){
+	
+				Color32 col;
+	
+				col = color.Evaluate(dial);;
+	
+				sub.SetProceduralColor("Paint",col);
+				sub.RebuildTextures();
+			}
+
 	}
 }
 

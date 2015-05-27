@@ -1,16 +1,17 @@
 fileFormatVersion: 2
 guid: bf7025e8590c48645992b509bb2b7668
-timeCreated: 1432364675
-licenseType: Pro
+timeCreated: 1432682803
+licenseType: Free
 SubstanceImporter:
   serializedVersion: 5
   materialInstances:
-  - serializedVersion: 15
+  - serializedVersion: 16
     name: Duck
     prototypeName: Duck
     shader: {fileID: 4, guid: 0000000000000000f000000000000000, type: 0}
-    shaderKeywords: 
+    shaderKeywords: _NORMALMAP
     renderQueue: -1
+    lightmapFlags: 5
     inputs:
     - name: $randomseed
       value:
@@ -21,7 +22,7 @@ SubstanceImporter:
         texture: {instanceID: 0}
     - name: PaintColor
       value:
-        scalar[0]: .944827557
+        scalar[0]: .862069011
         scalar[1]: 1
         scalar[2]: 0
         scalar[3]: 1
@@ -46,6 +47,13 @@ SubstanceImporter:
         scalar[1]: 0
         scalar[2]: 0
         scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: Paint
+      value:
+        scalar[0]: .862069011
+        scalar[1]: 1
+        scalar[2]: 0
+        scalar[3]: 1
         texture: {instanceID: 0}
     materialInformation:
       serializedVersion: 5
