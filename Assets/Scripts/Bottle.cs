@@ -42,8 +42,8 @@ public class Bottle : MonoBehaviour {
 	}
 	
 
-	void OnMouseDown (){
-		Shot ();
-	}
+//	void OnMouseDown (){
+//		Shot ();
+//	}
 
 }

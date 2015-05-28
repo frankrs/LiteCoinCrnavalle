@@ -57,6 +57,7 @@ public class ScoreKeeper : MonoBehaviour {
 	{
 		Duck.OnScore += OnScore;
 		Bottle.OnScoreTime += OnScoreTime;
+		Can.OnScoreBullets += OnScoreBullets;
 		Controls.OnShotBullet += OnShotBullet;
 		Controls.OnBulletHit += OnBulletHit;
 		CamMove.OnCamUp += OnCamUp;
@@ -68,6 +69,7 @@ public class ScoreKeeper : MonoBehaviour {
 	{
 		Duck.OnScore -= OnScore;
 		Bottle.OnScoreTime -= OnScoreTime;
+		Can.OnScoreBullets -= OnScoreBullets;
 		Controls.OnShotBullet -= OnShotBullet;
 		Controls.OnBulletHit -= OnBulletHit;
 		CamMove.OnCamUp += OnCamUp;
@@ -96,6 +98,11 @@ public class ScoreKeeper : MonoBehaviour {
 		timeText.text = time.ToString();
 	}
 
+	void OnScoreBullets (){
+		bullets = bullets + 10;
+		bulletText.text = bullets.ToString();
+	}
+
 	void OnShotBullet(){
 		fxTrack.PlayOneShot(fxSounds.gunShot);
 		bullets = bullets -1;
@@ -119,6 +126,9 @@ public class ScoreKeeper : MonoBehaviour {
 			break;
 		case "glass" : 
 			fxTrack.PlayOneShot(fxSounds.glassShot);
+			break;
+		case "can" : 
+			fxTrack.PlayOneShot(fxSounds.canShot);
 			break;
 		}
 
@@ -198,6 +208,7 @@ public class FXSounds{
 	public AudioClip glassShot;
 	public AudioClip gunCock;
 	public AudioClip gunShot;
+	public AudioClip canShot;
 }
 
 [System.Serializable]

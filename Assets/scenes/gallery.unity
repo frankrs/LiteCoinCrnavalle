@@ -1723,6 +1723,7 @@ MonoBehaviour:
   targets:
   - {fileID: 105290, guid: b0108d47ce67b4b4c8da8d08a7c578f9, type: 2}
   - {fileID: 119810, guid: 9148cdd9570171b47894ab61da0fbf15, type: 2}
+  - {fileID: 121748, guid: 32d221f181324b647822ff6c8325e3e7, type: 2}
   genTime: 2
 --- !u!4 &1112495585
 Transform:
@@ -2243,6 +2244,7 @@ MonoBehaviour:
   targets:
   - {fileID: 123996, guid: 0ddecd59038ec254b8ab18ca5df11970, type: 2}
   - {fileID: 119810, guid: 9148cdd9570171b47894ab61da0fbf15, type: 2}
+  - {fileID: 121748, guid: 32d221f181324b647822ff6c8325e3e7, type: 2}
   genTime: 2
 --- !u!4 &1520562539
 Transform:
@@ -3065,6 +3067,7 @@ MonoBehaviour:
   targets:
   - {fileID: 123996, guid: 0ddecd59038ec254b8ab18ca5df11970, type: 2}
   - {fileID: 119810, guid: 9148cdd9570171b47894ab61da0fbf15, type: 2}
+  - {fileID: 121748, guid: 32d221f181324b647822ff6c8325e3e7, type: 2}
   genTime: 2
 --- !u!1 &1887252460
 GameObject:
@@ -3139,6 +3142,7 @@ MonoBehaviour:
     glassShot: {fileID: 8300000, guid: 90396371d67c25842ab6f7289b4680bd, type: 3}
     gunCock: {fileID: 8300000, guid: e5cfb13a341798848854fd60a401684f, type: 3}
     gunShot: {fileID: 8300000, guid: 050f02ccd482d834aa4279996713bc3e, type: 3}
+    canShot: {fileID: 8300000, guid: 7df0dc17d9a06e648badff3326dc3ad6, type: 3}
   musicMute: {fileID: 24516730, guid: cb295bc29e2f3ce44b0dba3bf922abcb, type: 2}
   musicUnMute: {fileID: 24517270, guid: cb295bc29e2f3ce44b0dba3bf922abcb, type: 2}
   fxMuted: 0
@@ -3450,6 +3454,7 @@ MonoBehaviour:
   targets:
   - {fileID: 105290, guid: b0108d47ce67b4b4c8da8d08a7c578f9, type: 2}
   - {fileID: 119810, guid: 9148cdd9570171b47894ab61da0fbf15, type: 2}
+  - {fileID: 121748, guid: 32d221f181324b647822ff6c8325e3e7, type: 2}
   genTime: 2
 --- !u!4 &1954949440
 Transform:
