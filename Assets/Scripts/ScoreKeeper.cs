@@ -56,6 +56,7 @@ public class ScoreKeeper : MonoBehaviour {
 	void OnEnable()
 	{
 		Duck.OnScore += OnScore;
+		Bottle.OnScoreTime += OnScoreTime;
 		Controls.OnShotBullet += OnShotBullet;
 		Controls.OnBulletHit += OnBulletHit;
 		CamMove.OnCamUp += OnCamUp;
@@ -66,6 +67,7 @@ public class ScoreKeeper : MonoBehaviour {
 	void OnDisable()
 	{
 		Duck.OnScore -= OnScore;
+		Bottle.OnScoreTime -= OnScoreTime;
 		Controls.OnShotBullet -= OnShotBullet;
 		Controls.OnBulletHit -= OnBulletHit;
 		CamMove.OnCamUp += OnCamUp;
@@ -89,6 +91,11 @@ public class ScoreKeeper : MonoBehaviour {
 		scoreText.text = score.ToString();
 	}
 
+	void OnScoreTime(){
+		time = time + 10;
+		timeText.text = time.ToString();
+	}
+
 	void OnShotBullet(){
 		fxTrack.PlayOneShot(fxSounds.gunShot);
 		bullets = bullets -1;
@@ -110,7 +117,11 @@ public class ScoreKeeper : MonoBehaviour {
 		case "wood" : 
 			fxTrack.PlayOneShot(fxSounds.woodShot);
 			break;
+		case "glass" : 
+			fxTrack.PlayOneShot(fxSounds.glassShot);
+			break;
 		}
+
 	}
 
 

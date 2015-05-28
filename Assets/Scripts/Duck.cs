@@ -15,8 +15,6 @@ public class Duck : MonoBehaviour {
 
 	public Renderer duckRend;
 
-	private ProceduralMaterial sub;
-
 	private Animator anim;
 
 	public float cycleTime = 10;
@@ -25,14 +23,18 @@ public class Duck : MonoBehaviour {
 
 	public float dial;
 
+	public GameObject pointGhost;
+
 	public delegate void Score(int points);
 	public static event Score OnScore;
+
+
 
 	
 
 	void Awake () {
 		anim = GetComponent<Animator>();
-		sub = duckRend.material as ProceduralMaterial;
+		duckRend.material.SetTextureOffset("_MetalSpots", new Vector2(Random.Range(0f,1f),Random.Range(0f,1f)));
 	}
 
 	void Start () {
@@ -47,35 +49,43 @@ public class Duck : MonoBehaviour {
 	public void Shot (){
 		if(!target.shot){
 			anim.SetTrigger("Shot");
-			OnScore(target.points);
+
+			int points = 1;
+
+			if(dial < .15f){
+				points = 3;
+			}
+			else if(dial > .85){
+				points = 5;
+			}
+
+
+			OnScore(points);
+
+			// instantiate sighn
+			GameObject ghost = GameObject.Instantiate(pointGhost,transform.position + new Vector3 (0f,.1f,.1f),Quaternion.identity) as GameObject;
+			ghost.GetComponent<TextMesh>().text = "+" + points.ToString();
+
 		}
 		target.shot = true;
 	}
 
+	
+
 
 	void Update(){
+
 		// move the duck forward
 		transform.Translate(transform.forward * speed * Time.deltaTime,Space.World);
-	}
-
-
-
-	void LateUpdate(){
 
 		// ocsillate color value
 		dial = Mathf.PingPong((Time.time + dialoffset) * colorChangeSpeed, 1f);
 
-			if(sub){
-	
-				Color32 col;
-	
-				col = color.Evaluate(dial);;
-	
-				sub.SetProceduralColor("Paint",col);
-				sub.RebuildTextures();
-			}
-
+		// set ducks color
+		duckRend.material.SetColor("_Paint",color.Evaluate(dial));
 	}
+
+	
 }
 
 

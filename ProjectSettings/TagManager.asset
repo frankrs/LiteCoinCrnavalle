@@ -6,6 +6,7 @@ TagManager:
   tags:
   - metal
   - wood
+  - glass
   layers:
   - Default
   - TransparentFX

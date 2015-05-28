@@ -44,7 +44,7 @@ LevelGameManager:
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 5
-  m_GIWorkflowMode: 1
+  m_GIWorkflowMode: 0
   m_LightmapsMode: 1
   m_GISettings:
     serializedVersion: 2
@@ -452,7 +452,7 @@ Light:
   serializedVersion: 6
   m_Type: 2
   m_Color: {r: .926470578, g: .91801393, b: .61991781, a: 1}
-  m_Intensity: 7.61000013
+  m_Intensity: 1.63999999
   m_Range: 3
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -470,7 +470,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_Lightmapping: 2
-  m_BounceIntensity: 4
+  m_BounceIntensity: 2.6400001
   m_ShadowRadius: 5
   m_ShadowAngle: 0
   m_AreaSize: {x: 1, y: 1}
@@ -485,7 +485,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 12
 --- !u!1 &285668380
 GameObject:
   m_ObjectHideFlags: 0
@@ -763,7 +763,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 6
 --- !u!114 &479012570
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -851,7 +851,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 4
 --- !u!1 &490300536
 GameObject:
   m_ObjectHideFlags: 0
@@ -1082,7 +1082,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 8
 --- !u!1 &730040248
 GameObject:
   m_ObjectHideFlags: 0
@@ -1332,7 +1332,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 9
 --- !u!114 &885351606
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1464,7 +1464,23 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 444192, guid: 88e58cf2aedd5f64f86f0e42f76dde53, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 413104, guid: 88e58cf2aedd5f64f86f0e42f76dde53, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -4.05100012
+      objectReference: {fileID: 0}
+    - target: {fileID: 478502, guid: 88e58cf2aedd5f64f86f0e42f76dde53, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -4.38000011
+      objectReference: {fileID: 0}
+    - target: {fileID: 478502, guid: 88e58cf2aedd5f64f86f0e42f76dde53, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 4.42000008
+      objectReference: {fileID: 0}
+    - target: {fileID: 478502, guid: 88e58cf2aedd5f64f86f0e42f76dde53, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -.230000004
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 88e58cf2aedd5f64f86f0e42f76dde53, type: 2}
@@ -1676,7 +1692,50 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 7
+--- !u!1 &1112495583
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1112495585}
+  - 114: {fileID: 1112495584}
+  m_Layer: 0
+  m_Name: DuckFactory 3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1112495584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1112495583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3b47c9f59b91d4783266714a4f0e0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targets:
+  - {fileID: 105290, guid: b0108d47ce67b4b4c8da8d08a7c578f9, type: 2}
+  - {fileID: 119810, guid: 9148cdd9570171b47894ab61da0fbf15, type: 2}
+  genTime: 2
+--- !u!4 &1112495585
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1112495583}
+  m_LocalRotation: {x: 0, y: -.707106829, z: 0, w: .707106709}
+  m_LocalPosition: {x: 2.6960001, y: 2.68899989, z: 4.02899981}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
 --- !u!1 &1184069266
 GameObject:
   m_ObjectHideFlags: 0
@@ -2154,6 +2213,49 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
   m_EffectDistance: {x: 2, y: -2}
   m_UseGraphicAlpha: 1
+--- !u!1 &1520562537
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1520562539}
+  - 114: {fileID: 1520562538}
+  m_Layer: 0
+  m_Name: DuckFactory 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1520562538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1520562537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3b47c9f59b91d4783266714a4f0e0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targets:
+  - {fileID: 123996, guid: 0ddecd59038ec254b8ab18ca5df11970, type: 2}
+  - {fileID: 119810, guid: 9148cdd9570171b47894ab61da0fbf15, type: 2}
+  genTime: 2
+--- !u!4 &1520562539
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1520562537}
+  m_LocalRotation: {x: 0, y: .707106829, z: 0, w: .707106709}
+  m_LocalPosition: {x: -2.61899996, y: 3.39499998, z: 4.3119998}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
 --- !u!1 &1528928454
 GameObject:
   m_ObjectHideFlags: 0
@@ -2948,7 +3050,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 2
 --- !u!114 &1879810364
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2962,6 +3064,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targets:
   - {fileID: 123996, guid: 0ddecd59038ec254b8ab18ca5df11970, type: 2}
+  - {fileID: 119810, guid: 9148cdd9570171b47894ab61da0fbf15, type: 2}
   genTime: 2
 --- !u!1 &1887252460
 GameObject:
@@ -3009,7 +3112,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 11
 --- !u!114 &1887252463
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3033,9 +3136,9 @@ MonoBehaviour:
   fxSounds:
     metalShot: {fileID: 8300000, guid: 61aa97b85beec424a99f666bc88d48e6, type: 3}
     woodShot: {fileID: 8300000, guid: 6a0c7f404e039ef41a7544b86ad6e262, type: 3}
-    glassShot: {fileID: 0}
+    glassShot: {fileID: 8300000, guid: 90396371d67c25842ab6f7289b4680bd, type: 3}
     gunCock: {fileID: 8300000, guid: e5cfb13a341798848854fd60a401684f, type: 3}
-    gunShot: {fileID: 8300000, guid: 19587fafed8486248a541028471e5905, type: 3}
+    gunShot: {fileID: 8300000, guid: 050f02ccd482d834aa4279996713bc3e, type: 3}
   musicMute: {fileID: 24516730, guid: cb295bc29e2f3ce44b0dba3bf922abcb, type: 2}
   musicUnMute: {fileID: 24517270, guid: cb295bc29e2f3ce44b0dba3bf922abcb, type: 2}
   fxMuted: 0
@@ -3317,6 +3420,49 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1913846160}
+--- !u!1 &1954949438
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1954949440}
+  - 114: {fileID: 1954949439}
+  m_Layer: 0
+  m_Name: DuckFactory 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1954949439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1954949438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3b47c9f59b91d4783266714a4f0e0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targets:
+  - {fileID: 105290, guid: b0108d47ce67b4b4c8da8d08a7c578f9, type: 2}
+  - {fileID: 119810, guid: 9148cdd9570171b47894ab61da0fbf15, type: 2}
+  genTime: 2
+--- !u!4 &1954949440
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1954949438}
+  m_LocalRotation: {x: 0, y: -.707106829, z: 0, w: .707106709}
+  m_LocalPosition: {x: 2.13700008, y: 1.329, z: 3.829}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
 --- !u!1 &2037494258
 GameObject:
   m_ObjectHideFlags: 0
@@ -3431,7 +3577,7 @@ RectTransform:
   - {fileID: 1184110794}
   - {fileID: 998608822}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 10
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}

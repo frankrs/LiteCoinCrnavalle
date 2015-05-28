@@ -71,7 +71,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 111128}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 485384}
@@ -83,7 +83,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 123996}
   m_LocalRotation: {x: 0, y: .707106829, z: 0, w: .707106709}
-  m_LocalPosition: {x: .529999971, y: .0799999982, z: 2.46000004}
+  m_LocalPosition: {x: -.439999998, y: 2.60299993, z: 3.66499996}
   m_LocalScale: {x: 2.46363711, y: 2.46363664, z: 2.46363664}
   m_Children:
   - {fileID: 436628}
@@ -100,7 +100,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: -1508441931, guid: bf7025e8590c48645992b509bb2b7668, type: 3}
+  - {fileID: 2100000, guid: 4b9177309e4c2d14093e2451778eeec3, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -196,26 +196,26 @@ MonoBehaviour:
     shot: 0
     points: 2
   speed: .75
-  life: 7
+  life: 9
   color:
     key0:
       serializedVersion: 2
-      rgba: 4281859840
+      rgba: 4278228510
     key1:
       serializedVersion: 2
-      rgba: 4278255590
+      rgba: 4278228510
     key2:
       serializedVersion: 2
-      rgba: 4293067007
+      rgba: 4278255590
     key3:
       serializedVersion: 2
-      rgba: 0
+      rgba: 65510
     key4:
       serializedVersion: 2
-      rgba: 0
+      rgba: 14876927
     key5:
       serializedVersion: 2
-      rgba: 0
+      rgba: 14876927
     key6:
       serializedVersion: 2
       rgba: 0
@@ -223,11 +223,11 @@ MonoBehaviour:
       serializedVersion: 2
       rgba: 0
     ctime0: 0
-    ctime1: 32768
-    ctime2: 65535
-    ctime3: 0
-    ctime4: 0
-    ctime5: 0
+    ctime1: 6554
+    ctime2: 9830
+    ctime3: 52428
+    ctime4: 55705
+    ctime5: 65535
     ctime6: 0
     ctime7: 0
     atime0: 0
@@ -238,12 +238,13 @@ MonoBehaviour:
     atime5: 0
     atime6: 0
     atime7: 0
-    m_NumColorKeys: 3
+    m_NumColorKeys: 6
     m_NumAlphaKeys: 3
   colorChangeSpeed: .5
   duckRend: {fileID: 2328836}
   cycleTime: 10
   dial: 0
+  pointGhost: {fileID: 158448, guid: 5e2bbd9cb2533ba4d92b0da19d2d7079, type: 2}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
