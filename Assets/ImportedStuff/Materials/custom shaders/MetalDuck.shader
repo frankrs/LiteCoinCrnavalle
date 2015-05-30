@@ -1,11 +1,11 @@
 // Shader created with Shader Forge v1.13 
 // Shader Forge (c) Neat Corporation / Joachim Holmer - http://www.acegikmo.com/shaderforge/
 // Note: Manually altering this data may prevent you from opening it in Shader Forge
-/*SF_DATA;ver:1.13;sub:START;pass:START;ps:flbk:,lico:1,lgpr:1,nrmq:1,nrsp:0,limd:1,spmd:1,trmd:0,grmd:0,uamb:True,mssp:True,bkdf:False,rprd:True,enco:False,rmgx:True,rpth:0,hqsc:True,hqlp:False,tesm:0,bsrc:0,bdst:1,culm:0,dpts:2,wrdp:True,dith:0,ufog:True,aust:True,igpj:False,qofs:0,qpre:1,rntp:1,fgom:False,fgoc:False,fgod:False,fgor:False,fgmd:0,fgcr:0.5,fgcg:0.5,fgcb:0.5,fgca:1,fgde:0.01,fgrn:0,fgrf:300,ofsf:0,ofsu:0,f2p0:False;n:type:ShaderForge.SFN_Final,id:8247,x:32899,y:32411,varname:node_8247,prsc:2|diff-960-OUT,spec-6459-OUT;n:type:ShaderForge.SFN_Color,id:7146,x:32318,y:32000,ptovrint:False,ptlb:Paint,ptin:_Paint,varname:node_7146,prsc:2,glob:False,c1:0.5,c2:0.5,c3:0.5,c4:1;n:type:ShaderForge.SFN_TexCoord,id:9241,x:32123,y:32728,varname:node_9241,prsc:2,uv:0;n:type:ShaderForge.SFN_Tex2d,id:8553,x:32384,y:32567,ptovrint:False,ptlb:MetalSpots,ptin:_MetalSpots,varname:node_8553,prsc:2,ntxv:0,isnm:False|UVIN-9241-UVOUT;n:type:ShaderForge.SFN_Color,id:6181,x:32298,y:32178,ptovrint:False,ptlb:MetalColor,ptin:_MetalColor,varname:node_6181,prsc:2,glob:False,c1:0.5,c2:0.5,c3:0.5,c4:1;n:type:ShaderForge.SFN_Lerp,id:960,x:32634,y:32200,varname:node_960,prsc:2|A-7146-RGB,B-6181-RGB,T-8553-RGB;n:type:ShaderForge.SFN_Color,id:8151,x:32137,y:32339,ptovrint:False,ptlb:PaintSpec,ptin:_PaintSpec,varname:node_8151,prsc:2,glob:False,c1:0.5,c2:0.5,c3:0.5,c4:1;n:type:ShaderForge.SFN_Color,id:418,x:32137,y:32511,ptovrint:False,ptlb:MetalSpewc,ptin:_MetalSpewc,varname:node_418,prsc:2,glob:False,c1:0.5,c2:0.5,c3:0.5,c4:1;n:type:ShaderForge.SFN_Lerp,id:6459,x:32634,y:32421,varname:node_6459,prsc:2|A-8151-RGB,B-418-RGB,T-8553-RGB;proporder:7146-6181-8553-8151-418;pass:END;sub:END;*/
+/*SF_DATA;ver:1.13;sub:START;pass:START;ps:flbk:,lico:1,lgpr:1,nrmq:1,nrsp:0,limd:1,spmd:1,trmd:0,grmd:0,uamb:True,mssp:True,bkdf:False,rprd:True,enco:False,rmgx:True,rpth:0,hqsc:True,hqlp:False,tesm:0,bsrc:0,bdst:1,culm:0,dpts:2,wrdp:True,dith:0,ufog:True,aust:True,igpj:False,qofs:0,qpre:1,rntp:1,fgom:False,fgoc:False,fgod:False,fgor:False,fgmd:0,fgcr:0.5,fgcg:0.5,fgcb:0.5,fgca:1,fgde:0.01,fgrn:0,fgrf:300,ofsf:0,ofsu:0,f2p0:False;n:type:ShaderForge.SFN_Final,id:8247,x:32899,y:32411,varname:node_8247,prsc:2|diff-960-OUT,spec-6459-OUT;n:type:ShaderForge.SFN_Color,id:7146,x:32318,y:32000,ptovrint:False,ptlb:Main Color,ptin:_MainColor,varname:node_7146,prsc:2,glob:False,c1:0.5,c2:0.5,c3:0.5,c4:1;n:type:ShaderForge.SFN_TexCoord,id:9241,x:32123,y:32728,varname:node_9241,prsc:2,uv:0;n:type:ShaderForge.SFN_Tex2d,id:8553,x:32384,y:32567,ptovrint:False,ptlb:MetalSpots,ptin:_MetalSpots,varname:node_8553,prsc:2,ntxv:0,isnm:False|UVIN-9241-UVOUT;n:type:ShaderForge.SFN_Color,id:6181,x:32298,y:32178,ptovrint:False,ptlb:MetalColor,ptin:_MetalColor,varname:node_6181,prsc:2,glob:False,c1:0.5,c2:0.5,c3:0.5,c4:1;n:type:ShaderForge.SFN_Lerp,id:960,x:32634,y:32200,varname:node_960,prsc:2|A-7146-RGB,B-6181-RGB,T-8553-RGB;n:type:ShaderForge.SFN_Color,id:8151,x:32137,y:32339,ptovrint:False,ptlb:PaintSpec,ptin:_PaintSpec,varname:node_8151,prsc:2,glob:False,c1:0.5,c2:0.5,c3:0.5,c4:1;n:type:ShaderForge.SFN_Color,id:418,x:32137,y:32511,ptovrint:False,ptlb:MetalSpewc,ptin:_MetalSpewc,varname:node_418,prsc:2,glob:False,c1:0.5,c2:0.5,c3:0.5,c4:1;n:type:ShaderForge.SFN_Lerp,id:6459,x:32634,y:32421,varname:node_6459,prsc:2|A-8151-RGB,B-418-RGB,T-8553-RGB;proporder:7146-6181-8553-8151-418;pass:END;sub:END;*/
 
 Shader "Shader Forge/MetalDuck" {
     Properties {
-        _Paint ("Paint", Color) = (0.5,0.5,0.5,1)
+        _MainColor ("Main Color", Color) = (0.5,0.5,0.5,1)
         _MetalColor ("MetalColor", Color) = (0.5,0.5,0.5,1)
         _MetalSpots ("MetalSpots", 2D) = "white" {}
         _PaintSpec ("PaintSpec", Color) = (0.5,0.5,0.5,1)
@@ -35,7 +35,7 @@ Shader "Shader Forge/MetalDuck" {
             #pragma multi_compile_fog
             #pragma exclude_renderers gles3 metal d3d11_9x xbox360 xboxone ps3 ps4 psp2 
             #pragma target 3.0
-            uniform float4 _Paint;
+            uniform float4 _MainColor;
             uniform sampler2D _MetalSpots; uniform float4 _MetalSpots_ST;
             uniform float4 _MetalColor;
             uniform float4 _PaintSpec;
@@ -118,7 +118,7 @@ Shader "Shader Forge/MetalDuck" {
                 float3 directDiffuse = max( 0.0, NdotL) * attenColor;
                 float3 indirectDiffuse = float3(0,0,0);
                 indirectDiffuse += UNITY_LIGHTMODEL_AMBIENT.rgb; // Ambient Light
-                float3 diffuseColor = lerp(_Paint.rgb,_MetalColor.rgb,_MetalSpots_var.rgb);
+                float3 diffuseColor = lerp(_MainColor.rgb,_MetalColor.rgb,_MetalSpots_var.rgb);
                 float3 diffuse = (directDiffuse + indirectDiffuse) * diffuseColor;
 /// Final Color:
                 float3 finalColor = diffuse + specular;
@@ -149,7 +149,7 @@ Shader "Shader Forge/MetalDuck" {
             #pragma multi_compile_fog
             #pragma exclude_renderers gles3 metal d3d11_9x xbox360 xboxone ps3 ps4 psp2 
             #pragma target 3.0
-            uniform float4 _Paint;
+            uniform float4 _MainColor;
             uniform sampler2D _MetalSpots; uniform float4 _MetalSpots_ST;
             uniform float4 _MetalColor;
             uniform float4 _PaintSpec;
@@ -199,7 +199,7 @@ Shader "Shader Forge/MetalDuck" {
 /////// Diffuse:
                 NdotL = max(0.0,dot( normalDirection, lightDirection ));
                 float3 directDiffuse = max( 0.0, NdotL) * attenColor;
-                float3 diffuseColor = lerp(_Paint.rgb,_MetalColor.rgb,_MetalSpots_var.rgb);
+                float3 diffuseColor = lerp(_MainColor.rgb,_MetalColor.rgb,_MetalSpots_var.rgb);
                 float3 diffuse = directDiffuse * diffuseColor;
 /// Final Color:
                 float3 finalColor = diffuse + specular;

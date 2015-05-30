@@ -82,7 +82,7 @@ public class Duck : MonoBehaviour {
 		dial = Mathf.PingPong((Time.time + dialoffset) * colorChangeSpeed, 1f);
 
 		// set ducks color
-		duckRend.material.SetColor("_Paint",color.Evaluate(dial));
+		duckRend.material.SetColor("_MainColor",color.Evaluate(dial));
 	}
 
 	

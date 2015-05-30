@@ -6,7 +6,7 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: DuckSF
+  m_Name: DuckSF purple
   m_Shader: {fileID: 4800000, guid: cf83e6ddd586b4e449bcc3a34fa60f71, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
@@ -180,4 +180,4 @@ Material:
       data:
         first:
           name: _MainColor
-        second: {r: .862069011, g: 1, b: 0, a: 1}
+        second: {r: .383924872, g: 0, b: .492647052, a: 1}

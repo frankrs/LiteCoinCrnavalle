@@ -21,6 +21,10 @@ public class ScoreKeeper : MonoBehaviour {
 
 	public Text gameOverText;
 
+	public Text startPannelHighScore;
+
+	public Text newHighScore;
+
 	public GameObject playPannel;
 
 	public GameObject gameOverPannel;
@@ -77,7 +81,10 @@ public class ScoreKeeper : MonoBehaviour {
 	}
 
 	void Start(){
-
+		if(PlayerPrefs.HasKey("HighScore") == false){
+			PlayerPrefs.SetInt("HighScore",0);
+		}
+		startPannelHighScore.text = "High Score " + PlayerPrefs.GetInt("HighScore").ToString();
 	}
 
 	void KeepTime(){
@@ -95,11 +102,17 @@ public class ScoreKeeper : MonoBehaviour {
 
 	void OnScoreTime(){
 		time = time + 10;
+		if(time > 60){
+			time = 60;
+		}
 		timeText.text = time.ToString();
 	}
 
 	void OnScoreBullets (){
 		bullets = bullets + 10;
+		if(bullets > 100){
+			bullets = 100;
+		}
 		bulletText.text = bullets.ToString();
 	}
 
@@ -190,12 +203,18 @@ public class ScoreKeeper : MonoBehaviour {
 		gameState = GameState.gameOver;
 		gameOverPannel.SetActive(true);
 		gameOverText.text = cause;
+		if(score > PlayerPrefs.GetInt("HighScore")){
+			PlayerPrefs.SetInt("HighScore",score);
+			newHighScore.text = "New High Score " + PlayerPrefs.GetInt("HighScore").ToString();
+			newHighScore.gameObject.SetActive(true);
+		}
 	}
 
 
 
 	public void PlayAgain(){
 		GameOn();
+		newHighScore.gameObject.SetActive(false);
 	}
 
 
