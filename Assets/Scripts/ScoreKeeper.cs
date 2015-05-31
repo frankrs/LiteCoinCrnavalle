@@ -11,7 +11,7 @@ public class ScoreKeeper : MonoBehaviour {
 
 	public delegate void GameOvered();
 	public static event GameOvered OnGameOver;
-
+	
 
 	public Text scoreText;
 
@@ -81,17 +81,23 @@ public class ScoreKeeper : MonoBehaviour {
 	}
 
 	void Start(){
+
+
+
 		if(PlayerPrefs.HasKey("HighScore") == false){
 			PlayerPrefs.SetInt("HighScore",0);
 		}
 		startPannelHighScore.text = "High Score " + PlayerPrefs.GetInt("HighScore").ToString();
+
+
+
 	}
 
 	void KeepTime(){
 		time = time -1;
 		timeText.text = time.ToString();
 		if(time == 0){
-			GameOver ("Times Up");
+			StartCoroutine("GameOver","Times Up");
 		}
 	}
 
@@ -117,11 +123,13 @@ public class ScoreKeeper : MonoBehaviour {
 	}
 
 	void OnShotBullet(){
+		if(fxMuted == false){
 		fxTrack.PlayOneShot(fxSounds.gunShot);
+		}
 		bullets = bullets -1;
 		bulletText.text = bullets.ToString();
 		if(bullets == 0){
-			GameOver("Out of Ammo");
+			StartCoroutine("GameOver","Out of Ammo");
 		}
 	}
 
@@ -159,7 +167,9 @@ public class ScoreKeeper : MonoBehaviour {
 	}
 
 	void GameOn(){
+		if(fxMuted == false){
 		fxTrack.PlayOneShot(fxSounds.gunCock);
+		}
 		gameState = GameState.playing;
 		ResetStats ();
 		InvokeRepeating("KeepTime",1f,1f);
@@ -197,7 +207,8 @@ public class ScoreKeeper : MonoBehaviour {
 
 
 
-	public void GameOver(string cause){
+	IEnumerator GameOver(string cause){
+		yield return new WaitForEndOfFrame();
 		OnGameOver();
 		CancelInvoke("KeepTime");
 		gameState = GameState.gameOver;
@@ -205,7 +216,7 @@ public class ScoreKeeper : MonoBehaviour {
 		gameOverText.text = cause;
 		if(score > PlayerPrefs.GetInt("HighScore")){
 			PlayerPrefs.SetInt("HighScore",score);
-			newHighScore.text = "New High Score " + PlayerPrefs.GetInt("HighScore").ToString();
+			newHighScore.text = "New High Score " + score.ToString();
 			newHighScore.gameObject.SetActive(true);
 		}
 	}
